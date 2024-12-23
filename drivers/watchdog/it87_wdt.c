@@ -15,7 +15,7 @@
  *	Support of the watchdog timers, which are available on
  *	IT8607, IT8613, IT8620, IT8622, IT8625, IT8628, IT8655, IT8659,
  *	IT8665, IT8686, IT8702, IT8712, IT8716, IT8718, IT8720, IT8721,
- *	IT8726,	IT8728, IT8772, IT8783, IT8784 and IT8786.
+ *	IT8726,	IT8728, IT8733, IT8772, IT8783, IT8784 and IT8786.
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
@@ -71,6 +71,7 @@
 #define IT8721_ID	0x8721
 #define IT8726_ID	0x8726	/* the data sheet suggest wrongly 0x8716 */
 #define IT8728_ID	0x8728
+#define IT8733_ID	0x8733
 #define IT8772_ID	0x8772
 #define IT8783_ID	0x8783
 #define IT8784_ID	0x8784
@@ -326,6 +327,7 @@ static int __init it87_wdt_init(void)
 	case IT8721_ID:
 	case IT8726_ID:
 	case IT8728_ID:
+	case IT8733_ID:
 	case IT8772_ID:
 	case IT8783_ID:
 	case IT8784_ID:
